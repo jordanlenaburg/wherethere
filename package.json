@@ -1,0 +1,26 @@
+{
+  "name": "wherethere",
+  "version": "1.0.0",
+  "description": "This is a full stack application for tracking information on Road Trips",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "node start-client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.11.1",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
