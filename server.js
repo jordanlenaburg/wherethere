@@ -21,7 +21,6 @@ mongoose.connect(config.database, (err) => {
 });
 
 app.use("/auth", require("./routes/authRoutes"));
-// app.use("account", require("./routes/tripRoutes"));
 app.use("/account/trips", require("./routes/tripRoutes"));
 
 app.listen(port, () => {

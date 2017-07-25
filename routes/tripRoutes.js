@@ -4,7 +4,6 @@ let Trip = require("../models/trip");
 
 tripRoutes.route("/")
     .get((req, res) => {
-    console.log(req);
         Trip.find(
             {user_id: req.user._id},
             (err, trips) => {
@@ -13,7 +12,6 @@ tripRoutes.route("/")
             })
     })
     .post((req, res) => {
-        console.log(req);
         let newTrip = new Trip(req.body);
         newTrip.user_id = req.user._id;
         newTrip.save((err, createdTrip) => {
