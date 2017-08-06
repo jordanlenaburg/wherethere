@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
+import Header from "./components/header"
+
 class App extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
+                 <Header />
                 <h1>test</h1>
             </div>
         )
